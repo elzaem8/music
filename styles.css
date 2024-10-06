@@ -1,0 +1,232 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:black; /* خلفية ملونة */
+    color: #f7f3f3;
+    transition: background 0.5s;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+/* رأس الصفحة */
+.header {
+    background: rgba(255, 87, 51, 0.9); /* لون خلفية شبه شفاف */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.centered-text {
+    color: #4306ec;
+    font-size: 50px;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+    color: white;
+}
+.head {
+    mask-image: url(https://cdn-jjfhf.nitrocdn.com/hwGdHsKTGpIHJSBirKPhKvQbhZYuIuNn/assets/images/optimized/rev-448abd0/i0.wp.com/almdrasa.com/wp-content/uploads/2022/11/e268b442593d27996246ec8cf7776a51.software-developer-6521720-scaled.jpg);
+}
+
+/* قائمة التنقل */
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* بطاقات المهرجانات */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.music-button {
+    background: linear-gradient(45deg, #ff5733, #ffcc00); /* خلفية متدرجة */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    border-radius: 30px; /* شكل مستدير */
+    width: 100px; /* عرض الزر */
+    height: 50px; /* ارتفاع الزر */
+    font-size: 1.2em; /* حجم الخط */
+    font-weight: bold; /* نص عريض */
+    cursor: pointer; /* تغيير شكل المؤشر عند التمرير */
+    display: flex; /* استخدام الفليكس لتوسيع المحتوى */
+    align-items: center; /* توسيط العمود */
+    justify-content: center; /* توسيط الصف */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* ظل قوي */
+    transition: background 0.4s, transform 0.3s, box-shadow 0.3s; /* تأثير الانتقال */
+    text-transform: uppercase; /* نص كبير */
+}
+
+.song-link {
+    background: linear-gradient(45deg, #ff5733, #ffcc00); /* خلفية متدرجة */
+    color: rgb(241, 8, 8); /* لون النص */
+    border-radius: 25px; /* شكل مستدير */
+    padding: 10px 20px; /* مساحة داخلية */
+    font-size: 1.5em; /* حجم الخط */
+    font-weight: bold; /* نص عريض */
+    cursor: pointer; /* شكل المؤشر */
+    display: inline-block; /* لجعله كتلة قابلة للضغط */
+    text-align: center; /* توسيط النص */
+    text-transform: uppercase; /* نص كبير */
+    text-decoration: none; /* إزالة التسطير */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* ظل */
+    transition: background 0.4s, transform 0.3s, box-shadow 0.3s; /* تأثير الانتقال */
+    position: relative; /* لتسهيل إضافة تأثيرات */
+}
+
+.song-link:hover {
+    background: linear-gradient(45deg, #e0452b, #ffbb00); /* تغيير اللون عند التمرير */
+    transform: translateY(-3px); /* رفع العنصر عند التمرير */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* زيادة الظل */
+}
+
+.song-link:active {
+    transform: translateY(1px); /* تحريك العنصر لأسفل عند الضغط */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* تقليل الظل عند الضغط */
+}
+
+.song {
+    background: linear-gradient(45deg, #ff5733, #ffcc00); /* خلفية متدرجة */
+    color: rgb(49, 13, 255); /* لون النص */
+    border-radius: 50px; /* شكل مستدير */
+    padding: 15px 30px; /* مساحة داخلية */
+    font-size: 1.5em; /* حجم الخط */
+    font-weight: bold; /* نص عريض */
+    cursor: pointer; /* شكل المؤشر */
+    display: inline-block; /* لجعله كتلة قابلة للضغط */
+    text-align: center; /* توسيط النص */
+    text-transform: uppercase; /* نص كبير */
+    text-decoration: none; /* إزالة التسطير */
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3); /* ظل */
+    transition: background 0.4s, transform 0.3s, box-shadow 0.3s; /* تأثير الانتقال */
+    position: relative; /* لتسهيل إضافة تأثيرات */
+}
+
+.song:hover {
+    background: linear-gradient(45deg, #e0452b, #ffbb00); /* تغيير اللون عند التمرير */
+    transform: translateY(-3px); /* رفع العنصر عند التمرير */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* زيادة الظل */
+}
+
+.song:active {
+    transform: translateY(1px); /* تحريك العنصر لأسفل عند الضغط */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* تقليل الظل عند الضغط */
+}
+.audio_controls {
+    font-size: 10.5em;
+    background-color: #4306ec;
+}
+.music-button:hover {
+    background: linear-gradient(45deg, #e0452b, #ffbb00); /* تغيير اللون عند التمرير */
+    transform: translateY(-3px); /* رفع الزر عند التمرير */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* زيادة الظل */
+}
+
+.music-button:active {
+    transform: translateY(1px); /* تحريك الزر لأسفل عند الضغط */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* تقليل الظل عند الضغط */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* العناوين داخل البطاقات */
+.card h2 {
+    color: #ff5733;
+    font-size: 1.8em;
+    margin: 0 0 10px;
+}
+
+/* نص المهرجان */
+.card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* أزرار */
+.button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #e0452b;
+    transform: scale(1.05);
+}
+
+/* تذييل الصفحة */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* تأثيرات على الصور (اختياري) */
+.img-hover {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.img-hover:hover {
+    transform: scale(1.1);
+}
+
+/* تغيير شكل المهرجان */
+.mood-fest {
+    background-color: #5cdb95; /* لون مختلف للمهرجان */
+    color: #05386b;
+    transition: background 0.5s, color 0.5s;
+}
+
+.mood-fest h2 {
+    color: #ff6f61; /* لون مخصص لعنوان المهرجان */
+}
